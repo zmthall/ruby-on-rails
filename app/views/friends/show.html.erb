@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold"><%= @friend.first_name %> <%= @friend.last_name %></h1>
+        <p class="fs-4">Email Address: <%= @friend.email%></p>
+        <p class="fs-4">Phone Number: <%= @friend.phone%></p>
+        <p class="fs-4">Twitter: <%= @friend.twitter%></p>
+        <%= link_to "Edit Friend", edit_friend_path(@friend), class:"btn btn-dark"  %>
+        <%= link_to "Back to friends", friends_path, class:"btn btn-dark"  %>
+      </div>
+</div>
